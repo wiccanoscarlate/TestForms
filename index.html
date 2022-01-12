@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários DHTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrap {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            min-width: 280px;
+            margin: auto;
+            background-color: white;
+            padding: 0 1rem;
+            flex-grow: 1;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 1rem;
+            background: rgb(32, 32, 32);
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            padding: 1rem;
+            background: rgb(88, 88, 88);
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulários DHTML</h1>
+
+    <div class="wrap">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi excepturi, possimus illum sequi ad itaque. Asperiores molestiae laboriosam neque perspiciatis repellat voluptatum, explicabo quidem impedit hic recusandae ullam porro.</p>
+
+        <h2>Cadastre-se</h2>
+        <p>Preencha todos os campos para que seu cadastro fique bonito.</p>
+
+        <form action="#" method="post" name="cadastro" id="formCadastro">
+
+            <p>
+                <label for="nada">Preencha com alguma coisa:</label>
+                <input type="hidden" name="nada" id="nada" value="Nada aqui">
+            </p>
+
+            <p>
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo">
+            </p>
+
+            <p>
+                <label for="email">Seu e-mail:</label>
+                <input type="email" name="email" id="email">
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </p>
+
+            <p>
+                <label for="pais">País de origem:</label>
+                <select name="pais" id="pais">
+                    <option value="Brasil">Brasil</option>
+                    <option value="Portugal" selected>Portugal</option>
+                    <option value="Angola">Angola</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="sobre">Fale sobre você:</label>
+                <textarea name="sobre" id="sobre" placeholder="Preencha"></textarea>
+            </p>
+
+            <p>
+                <label>Sexo:</label>
+            <div><label><input type="radio" name="sexo" id="sexo" value="Feminino"> Feminino</label></div>
+            <div><label><input type="radio" name="sexo" id="sexo" value="Masculino"> Masculino</label></div>
+            <div><label><input type="radio" name="sexo" id="sexo" value="Não informar"> Não informar</label></div>
+            <div><label><input type="radio" name="sexo" id="sexo" value="Outro" checked> Outro</label></div>
+            </p>
+
+            <p>
+                <label>Preferências:</label>
+            <div><label><input type="checkbox" name="preferencias" id="preferencias" value="JavaScript" checked> JavaScript</label></div>
+            <div><label><input type="checkbox" name="preferencias" id="preferencias" value="Java"> Java</label></div>
+            <div><label><input type="checkbox" name="preferencias" id="preferencias" value="Python"> Python</label></div>
+            <div><label><input type="checkbox" name="preferencias" id="preferencias" value="PHP"> PHP</label></div>
+            </p>
+
+            <p>
+                <label for="estado">Estado:</label>
+                <input list="estado">
+                <datalist id="estado">
+                    <option value="Rio de Janeiro">
+                    <option value="São Paulo">
+                    <option value="Minas Gerais">
+                    <option value="Pananá">
+                    <option value="Amazonas">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="cor">Sua cor preferida:</label>
+                <input type="color" id="cor" name="cor" value="#ffff00">
+            </p>
+
+            <p>
+                <label for="senha">Senha do banco:</label>
+                <input type="password" name="senha" id="senha">
+            </p>
+
+            <p>
+                <label for="enviar"></label>
+                <input type="submit" value="Enviar">
+            </p>
+
+        </form>
+
+    </div>
+
+    <footer>
+        &copy; Copyright 2022 André Luferat<br><small><a href="https://opensource.org/licenses/MIT" target="_blank">Mit License</a></small>
+    </footer>
+
+</body>
+
+</html>
